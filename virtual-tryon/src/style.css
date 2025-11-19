@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --brand-primary: #4b2cff;
+  --brand-secondary: #f7f5ff;
+  --brand-accent: #ff6f61;
+  --text-dark: #1c1a2b;
+  --text-muted: #6f6d83;
+  --bg-light: #ffffff;
+  --bg-dark: #0f0e14;
+  --shadow-soft: 0 15px 30px rgba(12, 10, 40, 0.1);
+  --radius-pill: 28px;
+  --radius-card: 20px;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--brand-secondary);
+  color: var(--text-dark);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.hero-section {
+  min-height: calc(100vh - 72px);
+  display: grid;
+  place-items: center;
+  padding: 3rem 0;
+  background: linear-gradient(120deg, rgba(75, 44, 255, 0.08), rgba(255, 111, 97, 0.08));
+}
+
+.hero-card {
+  background: var(--bg-light);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  padding: 3rem;
+}
+
+.hero-cta,
+.hero-cta .btn {
+  border-radius: var(--radius-pill);
+  padding: 0.85rem 1.8rem;
+  font-weight: 600;
+}
+
+.feature-card {
+  border: none !important;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  background: var(--bg-light);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(12, 10, 40, 0.12);
+}
+
+.section-heading {
+  max-width: 720px;
+}
+
+.gallery-image {
+  border-radius: var(--radius-card);
+  object-fit: cover;
+  box-shadow: var(--shadow-soft);
+}
+
+.how-step {
+  background: var(--bg-light);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  padding: 2.25rem;
+  height: 100%;
+}
+
+.pricing-card {
+  border-radius: var(--radius-card);
+  border: 1px solid rgba(75, 44, 255, 0.12);
+  background: var(--bg-light);
+  transition: transform 200ms ease, box-shadow 200ms ease, border 200ms ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 36px rgba(12, 10, 40, 0.12);
+  border-color: rgba(75, 44, 255, 0.25);
+}
+
+.contact-card {
+  border-radius: var(--radius-card);
+  background: var(--bg-light);
+  box-shadow: var(--shadow-soft);
+  padding: 3rem;
+}
+
+.contact-card .btn {
+  border-radius: var(--radius-pill);
+}
+
+.app-footer {
+  background: var(--bg-dark);
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.app-footer a {
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  color: var(--brand-accent);
+}
+
+.badge-soft {
+  background: rgba(75, 44, 255, 0.12);
+  color: var(--brand-primary);
+  border-radius: var(--radius-pill);
+}
+
+.border-white-10 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+@media (max-width: 992px) {
+  .hero-card {
+    padding: 2.4rem;
+  }
+
+  .contact-card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-card {
+    padding: 2rem;
+  }
+
+  .hero-section {
+    padding: 2.5rem 0;
+  }
+}

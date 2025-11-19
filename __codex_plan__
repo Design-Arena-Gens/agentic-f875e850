@@ -1,0 +1,6 @@
+1. Inspect repo structure; set up React project scaffolding with Vite or Create React App in JS using React, React Router, Bootstrap integration.
+2. Implement pages/components (Home, Gallery, How It Works, Pricing, Contact) with static content, Bootstrap layout, react-router navigation, include Free image attribution placeholders, Font Awesome/React Icons usage.
+3. Add global styling in style.css with CSS root variables; ensure responsive design tweaks.
+4. Configure package.json scripts, dependencies (react, react-dom, react-router-dom, bootstrap, react-bootstrap, font-awesome icons), ensure assets imported.
+5. Build project (`npm run build`) verify success.
+6. Deploy to Vercel using provided command, verify deployment via curl.
